@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-6o4p3r42uf4rpqp()jba4u#+i2$k=@3kmo$=qvh#tldxi@htnm
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '192.168.80.129']
 
 
 # Application definition
@@ -76,14 +76,13 @@ WSGI_APPLICATION = 'oj.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'dbtest',        # tên database
-        'USER': 'postgres',      # user postgres
+        'NAME': 'myonlinejudge',
+        'USER': 'huong',
         'PASSWORD': '123456',
         'HOST': 'localhost',
         'PORT': '5432',
     }
 }
-
 
 
 # Password validation
